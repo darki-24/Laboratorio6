@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocina Creativa - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #fffaf4; padding-top: 70px; }
+    .active-link { font-weight: bold; color: #e67e22 !important; text-decoration: underline; }
+    .hero { background: #fdebd0; border-radius: 15px; padding: 2rem; }
+    img { border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-warning" href="index.html">🍳 Cocina Creativa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">Recetas</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina2.html">Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina3.html">Galería / Contacto</a></li>
+        <li class="nav-item"><a class="nav-link active-link" href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container mt-4">
+  <section class="hero text-center mb-4">
+    <h1 class="mb-3">Bienvenido a <span class="text-warning">Cocina Creativa</span></h1>
+    <p class="lead">Recetas rápidas, deliciosas y con un toque original. Aquí descubrirás cómo cocinar fácil y con estilo, ¡sin pasar horas en la cocina!</p>
+    <p>Explora nuestras secciones de recetas, tips y galería para inspirarte en tu próxima comida.</p>
+    <a href="pagina1.html" class="btn btn-warning text-white">Ver Recetas</a>
+  </section>
+
+  <!-- Componente 1: Cards de recetas destacadas -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/Tostadas_Mediterraneas.jpg" class="card-img-top" alt="Receta 1">
+        <div class="card-body">
+          <h5 class="card-title">Tostadas mediterráneas</h5>
+          <p class="card-text">Un toque de aceite de oliva, tomate fresco y queso feta. Perfectas para un desayuno rápido.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/wrap de pollo y aguacate.jpg" class="card-img-top" alt="Receta 2">
+        <div class="card-body">
+          <h5 class="card-title">Wrap de pollo y aguacate</h5>
+          <p class="card-text">Sencillo, saludable y delicioso. Ideal para el lunch o una cena ligera.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/smoothie tropical.jpg" class="card-img-top" alt="Receta 3">
+        <div class="card-body">
+          <h5 class="card-title">Smoothie tropical</h5>
+          <p class="card-text">Una bebida refrescante con mango, plátano y yogur natural.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Componente 2: Alert -->
+  <div class="alert alert-warning mt-4 text-center">
+    🍋 Tip del día: ¡Agrega hierbas frescas a tus platillos para darles un toque especial!
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

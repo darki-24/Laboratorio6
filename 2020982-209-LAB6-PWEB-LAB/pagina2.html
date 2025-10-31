@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips de Cocina - Cocina Creativa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #fffaf4; padding-top: 70px; }
+    .active-link { font-weight: bold; color: #e67e22 !important; text-decoration: underline; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-warning" href="index.html">🍳 Cocina Creativa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav2">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">Recetas</a></li>
+        <li class="nav-item"><a class="nav-link active-link" href="pagina2.html">Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina3.html">Galería / Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container mt-4">
+  <h1 class="mb-3">Tips de cocina creativa</h1>
+  <p>Estos consejos te ayudarán a mejorar el sabor, la presentación y el aprovechamiento de tus ingredientes.</p>
+  <p>La creatividad en la cocina no solo está en las recetas, sino en cómo usas lo que ya tienes a la mano.</p>
+  <p>Aprende a improvisar con estilo y sin estrés.</p>
+
+  <!-- Componente 1: Accordion -->
+  <div class="accordion mb-4" id="tips">
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#t1">1. Usa sobras con imaginación</button></h2>
+      <div id="t1" class="accordion-collapse collapse show">
+        <div class="accordion-body">Reutiliza arroz o pollo de días anteriores en croquetas, wraps o sopas. ¡Nada se desperdicia!</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t2">2. Juega con colores y texturas</button></h2>
+      <div id="t2" class="accordion-collapse collapse">
+        <div class="accordion-body">Combina ingredientes crujientes y suaves; colores vivos dan vida a cualquier plato.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Componente 2: Imagenes -->
+  <div class="row mb-5">
+    <div class="col-md-4"><img src="img/enchiladas suizas.jpg" class="img-fluid rounded"></div>
+    <div class="col-md-4"><img src="img/albondigas.jpg" class="img-fluid rounded"></div>
+    <div class="col-md-4"><img src="img/enchiladas rojas.jpg" class="img-fluid rounded"></div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
